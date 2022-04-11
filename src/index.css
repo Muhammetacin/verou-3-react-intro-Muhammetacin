@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header h1 {
+  text-align: center;
+}
+
+.todoList {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.todoList ul {
+  list-style-type: none;
+  margin: auto 0;
+  padding: 0;
+}
+
+.strike {
+  text-decoration: line-through;
+}

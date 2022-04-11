@@ -41,12 +41,19 @@ export default function TodoList() {
 
   console.log(todos);
   return (
-    <ul>
-      {todos.map((todo) => (
-        <li key={todo.id}>
-          <input type="checkbox" defaultChecked={false} onChange={() => toggle(todo.id)} /> {todo.task}
-        </li>
-      ))}
-    </ul>
+    <div className="todoList">
+      <ul>
+        {todos.map((todo) => (
+          <li key={todo.id} className={todo.completed ? "strike" : ""}>
+            <input
+              type="checkbox"
+              defaultChecked={false}
+              onChange={() => toggle(todo.id)}
+            />{" "}
+            {todo.task}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
