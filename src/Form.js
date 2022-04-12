@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { v4 as uuidv4, v1 as uuidv1 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 
 const Form = ({ setTodos }) => {
   const inputRef = useRef();
@@ -7,7 +7,7 @@ const Form = ({ setTodos }) => {
     event.preventDefault();
     const inputTodo = inputRef.current;
 
-    const id = uuidv1();
+    const id = uuidv4();
     const task = inputTodo.value;
     const completed = false;
 

@@ -5,28 +5,6 @@ import React, { useState } from "react";
 
 function App() {
   const initialTodos = [];
-  //   {
-  //     task: "My first todo",
-  //     completed: false,
-  //   },
-  //   {
-  //     task: "My second todo",
-  //     completed: false,
-  //   },
-  //   {
-  //     task: "My third todo",
-  //     completed: false,
-  //   },
-  //   {
-  //     task: "My fourth todo",
-  //     completed: false,
-  //   },
-  //   {
-  //     task: "My fifth todo",
-  //     completed: false,
-  //   },
-  // ];
-
   const [todos, setTodos] = useState(initialTodos);
 
   return (

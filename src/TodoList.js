@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as uuidv4, v1 as uuidv1 } from "uuid";
 
 const TodoList = ({ todos, setTodos }) => {
   const toggle = (todoTask) => {
