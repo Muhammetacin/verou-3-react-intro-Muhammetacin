@@ -1,50 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
+import { v4 as uuidv4, v1 as uuidv1 } from "uuid";
 
-export default function TodoList() {
-  const initialTodos = [
-    {
-      id: 1,
-      task: "My first todo",
-      completed: false,
-    },
-    {
-      id: 2,
-      task: "My second todo",
-      completed: false,
-    },
-    {
-      id: 3,
-      task: "My third todo",
-      completed: false,
-    },
-    {
-      id: 4,
-      task: "My fourth todo",
-      completed: false,
-    },
-    {
-      id: 5,
-      task: "My fifth todo",
-      completed: false,
-    },
-  ];
-  const [todos, setTodos] = useState(initialTodos);
-
-  const toggle = (id) => {
+const TodoList = ({ todos, setTodos }) => {
+  const toggle = (todoTask) => {
     let mapped = todos.map((task) => {
-      return task.id === id
+      return task.id === todoTask
         ? { ...task, completed: !task.completed }
         : { ...task };
     });
     setTodos(mapped);
   };
 
-  console.log(todos);
+  //   const addTodo = (task) => {
+  //     let mapped = todos.map(() => {
+  //       return { id: 0, task, completed: false };
+  //     });
+  //     setTodos(mapped);
+  //   };
+
   return (
-    <div className="todoList">
+    <div className="flex justify-center mb-8">
       <ul>
         {todos.map((todo) => (
-          <li key={todo.id} className={todo.completed ? "strike" : ""}>
+          <li key={todo.id} className={todo.completed ? "line-through" : ""}>
             <input
               type="checkbox"
               defaultChecked={false}
@@ -56,4 +34,6 @@ export default function TodoList() {
       </ul>
     </div>
   );
-}
+};
+
+export default TodoList;
