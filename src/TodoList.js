@@ -10,13 +10,6 @@ const TodoList = ({ todos, setTodos }) => {
     setTodos(mapped);
   };
 
-  //   const addTodo = (task) => {
-  //     let mapped = todos.map(() => {
-  //       return { id: 0, task, completed: false };
-  //     });
-  //     setTodos(mapped);
-  //   };
-
   return (
     <div className="flex justify-center mb-8">
       <ul>
