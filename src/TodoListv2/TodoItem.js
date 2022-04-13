@@ -1,11 +1,6 @@
 import React from "react";
 
 const TodoItem = ({ todos, setTodos }) => {
-  //   const [todos, setTodos] = useState([
-  //     { id: 1, task: "Hello React", completed: true },
-  //     { id: 2, task: "Hello Another React", completed: false },
-  //     { id: 2, task: "Hello Another React 2", completed: true },
-  //   ]);
   const toggle = (todoId) => {
     let mapped = todos.map((task) => {
       return task.id === todoId

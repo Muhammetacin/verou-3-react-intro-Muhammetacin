@@ -9,7 +9,6 @@ const Todos = () => {
 
   useEffect(() => {
     const todoItems = JSON.parse(window.localStorage.getItem("todos"));
-    console.log(todoItems);
     if (todoItems) {
       setTodos(todoItems);
     }

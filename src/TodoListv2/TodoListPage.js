@@ -18,21 +18,17 @@ const TodoListPage = () => {
 
   return (
     <div className="w-full flex flex-grow items-center justify-center bg-teal-50 font-sans">
-      {/* TodoList Container start */}
       <div className="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-5xl">
         {/* Form start */}
         <TodoListForm setTodos={setTodos} />
         {/* Form end */}
 
-        {/* Todo Items start */}
         <div>
           {/* Todo Item start */}
           <TodoItem todos={todos} setTodos={setTodos} />
           {/* Todo Item end */}
         </div>
-        {/* Todo Items end */}
       </div>
-      {/* TodoList Container end */}
     </div>
   );
 };
