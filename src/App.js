@@ -1,17 +1,10 @@
-import Form from "./Form";
-import Header from "./Header";
-import TodoList from "./TodoList";
-import React, { useState } from "react";
+import React from "react";
+import Navigation from "./Navigation";
 
 function App() {
-  const initialTodos = [];
-  const [todos, setTodos] = useState(initialTodos);
-
   return (
     <div className="App w-4/12 m-auto">
-      <Header />
-      <TodoList todos={todos} setTodos={setTodos} />
-      <Form setTodos={setTodos} />
+      <Navigation />
     </div>
   );
 }
