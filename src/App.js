@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Todos from "./TodoList/Todos";
 import Counter from "./Counter/Counter";
 import { Landing } from "./Landing";
-import TodoListContainer from "./TodoListv2/TodoListContainer";
+import TodoListPage from "./TodoListv2/TodoListPage";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="todos" element={<Todos />} />
         <Route path="counter" element={<Counter />} />
-        <Route path="todosv2" element={<TodoListContainer />} />
+        <Route path="todosv2" element={<TodoListPage />} />
       </Routes>
     </div>
   );
