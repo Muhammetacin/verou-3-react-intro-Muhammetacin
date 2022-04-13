@@ -10,6 +10,13 @@ const TodoList = ({ todos, setTodos }) => {
     setTodos(mapped);
   };
 
+  const checked = (completed) => {
+    if (completed) {
+      return "checked";
+    }
+    return "";
+  };
+
   return (
     <div className="flex justify-center mb-8">
       <ul>
@@ -17,7 +24,7 @@ const TodoList = ({ todos, setTodos }) => {
           <li key={todo.id} className={todo.completed ? "line-through" : ""}>
             <input
               type="checkbox"
-              defaultChecked={false}
+              defaultChecked={checked(todo.completed)}
               onChange={() => toggle(todo.id)}
             />{" "}
             {todo.task}
