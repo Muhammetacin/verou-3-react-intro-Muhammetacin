@@ -4,7 +4,7 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-purple-200 flex flex-col justify-center text-center mx-auto h-96">
+    <div className="flex flex-col justify-center text-center mx-auto h-96">
       <h2 className="text-4xl font-semibold">
         You clicked <span className="text-violet-600 font-bold">{count}</span>{" "}
         times

@@ -20,7 +20,7 @@ const Todos = () => {
   }, [todos]);
 
   return (
-    <div className="w-4/12 m-auto">
+    <div className="w-4/12 mx-auto">
       <Header />
       <TodoList todos={todos} setTodos={setTodos} />
       <Form setTodos={setTodos} />

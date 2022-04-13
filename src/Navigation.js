@@ -6,6 +6,9 @@ const Navigation = () => {
     <nav>
       <ul className="flex flex-row justify-evenly py-10 text-xl">
         <li>
+          <Link to="/">Landing</Link>
+        </li>
+        <li>
           <Link to="todos">Todo List</Link>
         </li>
         <li>
