@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <nav>
-      <ul className="flex flex-row justify-evenly pt-10 text-xl">
+      <ul className="flex flex-row justify-evenly py-10 text-xl">
         <li>
           <Link to="todos">Todo List</Link>
         </li>
