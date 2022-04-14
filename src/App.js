@@ -13,9 +13,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/todos" element={<Todos />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/todosv2" element={<TodoListPage />} />
+        <Route path="todos" element={<Todos />} />
+        <Route path="counter" element={<Counter />} />
+        <Route path="todosv2" element={<TodoListPage />} />
       </Routes>
     </div>
   );
