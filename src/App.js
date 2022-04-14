@@ -1,9 +1,9 @@
 import React from "react";
-import Navigation from "./Navigation";
 import { Routes, Route } from "react-router-dom";
+import Navigation from "./Navigation";
+import { Landing } from "./Landing";
 import Todos from "./TodoList/Todos";
 import Counter from "./Counter/Counter";
-import { Landing } from "./Landing";
 import TodoListPage from "./TodoListv2/TodoListPage";
 
 function App() {

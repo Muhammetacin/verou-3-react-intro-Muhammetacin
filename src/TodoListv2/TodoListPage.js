@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import TodoItem from "./TodoItem";
+import TodoItems from "./TodoItems";
 import TodoListForm from "./TodoListForm";
 
 const TodoListPage = () => {
@@ -25,7 +25,7 @@ const TodoListPage = () => {
 
         <div>
           {/* Todo Item start */}
-          <TodoItem todos={todos} setTodos={setTodos} />
+          <TodoItems todos={todos} setTodos={setTodos} />
           {/* Todo Item end */}
         </div>
       </div>
