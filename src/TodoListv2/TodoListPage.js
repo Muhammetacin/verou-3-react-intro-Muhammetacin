@@ -17,7 +17,7 @@ const TodoListPage = () => {
   }, [todos]);
 
   return (
-    <div className="w-full flex flex-grow items-center justify-center bg-teal-50 font-sans">
+    <div className="w-full flex flex-grow items-start justify-center place-content-start bg-teal-50 font-sans py-10">
       <div className="bg-white rounded shadow p-6 m-4 w-full lg:w-3/4 lg:max-w-5xl">
         {/* Form start */}
         <TodoListForm setTodos={setTodos} />

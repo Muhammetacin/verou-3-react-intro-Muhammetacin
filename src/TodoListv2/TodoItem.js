@@ -8,12 +8,6 @@ const TodoItem = ({ todo, editTodoItem, removeFromTodos }) => {
     editTodoItem(todoToggled);
   };
 
-  // BEGIN PART NOT WORKING YET
-  const handleUpdateInput = (e) => {
-    console.log(e.target.value);
-  };
-  // END PART NOT WORKING YET
-
   const handleEditDone = (event, todoToEdit) => {
     if (event.key === "Enter") {
       setEditState(false);
@@ -64,7 +58,6 @@ const TodoItem = ({ todo, editTodoItem, removeFromTodos }) => {
           required
           autoFocus
           defaultValue={todo.task}
-          onInput={handleUpdateInput}
           onKeyDown={(event) => handleEditDone(event, todo)}
         />
       )}
