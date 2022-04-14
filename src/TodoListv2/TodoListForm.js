@@ -31,7 +31,7 @@ const TodoListForm = ({ setTodos }) => {
           <input
             type="submit"
             value="Add"
-            className="shrink-0 p-2 px-8 border-2 rounded text-teal-400 border-teal-400 hover:text-white hover:bg-teal-400 active:bg-teal-500 focus:outline-none focus:ring focus:ring-teal-300"
+            className="shrink-0 p-2 px-10 border-2 rounded text-teal-400 border-teal-400 hover:text-white hover:bg-teal-400 active:bg-teal-500 focus:outline-none focus:ring focus:ring-teal-300"
           />
         </form>
       </div>

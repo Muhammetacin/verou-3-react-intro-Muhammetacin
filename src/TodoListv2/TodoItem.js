@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TodoItem = ({ todo, changeTodoItem: editTodoItem, removeFromTodos }) => {
+const TodoItem = ({ todo, editTodoItem, removeFromTodos }) => {
   const [editState, setEditState] = useState(false);
 
   const toggle = (todoToggled) => {
@@ -63,6 +63,7 @@ const TodoItem = ({ todo, changeTodoItem: editTodoItem, removeFromTodos }) => {
           className="shadow appearance-none border rounded w-full py-2 px-3 mr-4 text-gray-600"
           required
           autoFocus
+          defaultValue={todo.task}
           onInput={handleUpdateInput}
           onKeyDown={(event) => handleEditDone(event, todo)}
         />
